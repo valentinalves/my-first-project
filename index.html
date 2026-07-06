@@ -1,57 +1,86 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Espaço de Foco & Estudos</title>
     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #faf6f6;
+            margin: 0;
+            padding: 0;
+        }
         header {
-            background-color: rgb(9, 3, 63);
-            color: rgb(206, 167, 90);
+            background-color: #d4a373; /* Tom bronze/rose suave */
+            color: white;
             text-align: center;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
         }
         main {
-            background-color: rgb(206, 167, 90);
-            color: rgb(9, 3, 63);
+            background-color: #ffffff;
+            color: #4a5759; /* Verde acinzentado escuro para leitura confortável */
             max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
+            margin: 0 auto 20px auto;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-sizing: border-radius;
         }
-        display: flex;
+        .container-topo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0e6e6;
+        }
         img {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+        }
+        button {
+            background-color: #b7b7a4; /* Verde sábia pastél */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #a3a380;
+        }
+        button span {
+            font-weight: bold;
+            margin-left: 8px;
         }
         .artigo-autor {
             font-weight: bold;
+            color: #d4a373;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Tina's blog</h1>
-        <p>Vou compartilhar minhas opiniões e dar palpites sobre a fase de grupos da copa do mundo 2026</p>
-    </header>
-    <main>
-        <img src="ordem, progresso e.png" alt="Ícone azul e verde de 80x80px com a frase ORDEM, PROGRESSO E HEXA">
-        <button>❤️<span>0</span></button>
-        <div>
-            <h2>Meu primeiro post</h2>
-            <p class="artigo-autor">Por: Valentina Alves</p>
-            <p>Neste blog vou compartilhar minhas opiniões e previsões sobre a fase de grupos da Copa do Mundo de 2026.</p>
-        </div>
-    </main>
-</body>
-<script>
-    const botao = document.querySelector("button");
-    botao.addEventListener("click", botaoClicado);
-
-    function botaoClicado() {
-        console.log("fui clicado");
-        let texto = botao.querySelector("span");
-        texto.textContent++;
-    }
-</script>
-</html>
+        <h1>Cantinho dos Estudos ✨</h1>
+        <p>Um espaço planejado para ajudar você a manter o foco, organizar sua
