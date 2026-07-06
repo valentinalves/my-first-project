@@ -1,16 +1,57 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>site</title>
-    </head>
-    <body>
-        <h1>Meu Moodboard</h1>
-        <p>Por: Valentina Alves </p>
-        <p> Um site utilitário, mas totalmente focado em estética, para ajudar outras garotas a focarem nos estudosUm</p> 
-        
-        <h2>Boas vindas! Esse será seu site favorito para estudar, girlie, delicado, meigo e se adapta a você</h2>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: rgb(9, 3, 63);
+            color: rgb(206, 167, 90);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        main {
+            background-color: rgb(206, 167, 90);
+            color: rgb(9, 3, 63);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+        display: flex;
+        img {
+            width: 80px;
+            height: 80px;
+        }
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tina's blog</h1>
+        <p>Vou compartilhar minhas opiniões e dar palpites sobre a fase de grupos da copa do mundo 2026</p>
+    </header>
+    <main>
+        <img src="ordem, progresso e.png" alt="Ícone azul e verde de 80x80px com a frase ORDEM, PROGRESSO E HEXA">
+        <button>❤️<span>0</span></button>
+        <div>
+            <h2>Meu primeiro post</h2>
+            <p class="artigo-autor">Por: Valentina Alves</p>
+            <p>Neste blog vou compartilhar minhas opiniões e previsões sobre a fase de grupos da Copa do Mundo de 2026.</p>
+        </div>
+    </main>
+</body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+
+    function botaoClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+</script>
 </html>
